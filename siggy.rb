@@ -11,7 +11,7 @@ class Siggy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Darwin_x86_64.tar.gz"
-      sha256 "fcba24cfa544aa4634fe02a7f5383a07dedb37d3c3af67b4e95f72348cdf64ef"
+      sha256 "c2853cf87724b795e5da6e6eebd92bb089001111f2a162a2dd02cdbfce6e6391"
 
       def install
         bin.install "siggy"
@@ -19,7 +19,7 @@ class Siggy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Darwin_arm64.tar.gz"
-      sha256 "2932b7bd466a7bae8f2a586711b91258db22fd239fc16936838ae3fb5ff942d1"
+      sha256 "97886728ff21e1a0e33bd284edddd9518e21cb1a2beace0681c8905f40437978"
 
       def install
         bin.install "siggy"
@@ -30,14 +30,14 @@ class Siggy < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Linux_x86_64.tar.gz"
-      sha256 "cac4a281cdd019d01ff6439b5dc463bd077bca0895566348e4c0f15e3a19f7fa"
+      sha256 "a84193407f6d466c4499c0d635f94381fa61931f9dc7b2870d37c7be77f2be46"
       def install
         bin.install "siggy"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Linux_arm64.tar.gz"
-      sha256 "f644956413e04732388970904397c45ae94919e2f03cbb2072a27abe53e6ea9a"
+      sha256 "7d4fa04a5919c990f99370d1368c6ded4b818a7c09eb34510632d2bf03f7f95a"
       def install
         bin.install "siggy"
       end
