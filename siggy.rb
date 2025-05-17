@@ -5,21 +5,21 @@
 class Siggy < Formula
   desc "Generate presigned URL for AWS S3"
   homepage "https://github.com/RyuyaIshibashi/homebrew-aws-s3-siggy"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Darwin_x86_64.tar.gz"
-      sha256 "ad3d1b121cec8aeb3a41d60a5c3ba59dc1e7db9dc2a2deff2aae817641e3ee8a"
+      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.2.0/siggy_Darwin_x86_64.tar.gz"
+      sha256 "f2ad6026fc0fa457f1b392c982a3c7d9228ae97d43aa46e7d5b1f6b81a086484"
 
       def install
         bin.install "siggy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Darwin_arm64.tar.gz"
-      sha256 "14c35b4bac36dafbc8195dc1807ecab46bcffa4b22b8bba20ad0127fccbaf14f"
+      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.2.0/siggy_Darwin_arm64.tar.gz"
+      sha256 "227a9a018611742d24a0383acf445cfe3910f56b3754ba1ff2a34c1063086d3b"
 
       def install
         bin.install "siggy"
@@ -29,15 +29,15 @@ class Siggy < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Linux_x86_64.tar.gz"
-      sha256 "81ef8e3c7b82acf48848298521ec6c612e8767cf2926cea9fd03b71ad06191d9"
+      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.2.0/siggy_Linux_x86_64.tar.gz"
+      sha256 "7583ba03e6e869e06b4585dc7a3903deda539af4f7c6d82e212c178269831722"
       def install
         bin.install "siggy"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.1.0/siggy_Linux_arm64.tar.gz"
-      sha256 "82990358fcf395ced61c416baae7353ccbeaf0a06f5edb1f1e6fc2ba0b4495a5"
+      url "https://github.com/RyuyaIshibashi/aws-s3-siggy/releases/download/v0.2.0/siggy_Linux_arm64.tar.gz"
+      sha256 "f088230055c7a2f181f1ec306404e6ead89a6fdedd8c06217cbc134c1edd7737"
       def install
         bin.install "siggy"
       end
